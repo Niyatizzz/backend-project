@@ -7,6 +7,19 @@ const app = express()
 
 const port = process.env.PORT || 5000; //static server thats y define port on env file
 
+//routes to access and not get error 404
+//but routes have separate folder
+
+// app.get('/api/contacts', (req, res) => {
+//     // res.send("get all contacts")
+//     res.json({messege: "get all contacts"})
+// })
+
+//middleware
+app.use("/api/contacts", require("./routes/contactRoutes"))
+
+
+
 app.listen(port, () => {
     console.log(`server running on ${port}`)
 })
