@@ -18,7 +18,7 @@ const port = process.env.PORT || 5000; //static server thats y define port on en
 //middleware
 app.use("/api/contacts", require("./routes/contactRoutes"))
 
-
+//controllers - to controll all the logic reg req and res from datbases
 
 app.listen(port, () => {
     console.log(`server running on ${port}`)
