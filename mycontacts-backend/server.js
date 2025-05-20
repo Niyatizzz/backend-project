@@ -1,9 +1,11 @@
 // console.log("hello world")
 
 const express = require('express');
-const  errorHandler  = require('../middleware/errorhandler');
+const connectDb = require('./config/dbConnection')
+const  errorHandler  = require('../mycontacts-backend/middleware/errorHandler');
 const dotenv = require("dotenv").config();
 
+connectDb()
 const app = express()
 
 const port = process.env.PORT || 5000; //static server thats y define port on env file
