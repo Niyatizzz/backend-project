@@ -21,6 +21,7 @@ const port = process.env.PORT || 5000; //static server thats y define port on en
 //middleware
 app.use(express.json()) // to parse the req body from client
 app.use("/api/contacts", require("./routes/contactRoutes"))
+app.use("/api/users", require("./routes/userRoutes"))
 app.use(errorHandler)
 
 
