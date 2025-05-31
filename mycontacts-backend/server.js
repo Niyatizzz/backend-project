@@ -31,4 +31,4 @@ app.listen(port, () => {
     console.log(`server running on ${port}`)
 })
 
-//now tht weve created an app thats listening to reqs we need to test it using a http client like thunder client -exension in vscode or postman>>
+//now tht we've created an app thats listening to reqs we need to test it using a http client like thunder client -exension in vscode or postman>>
